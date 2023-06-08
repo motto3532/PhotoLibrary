@@ -17,6 +17,15 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var pictureImage: UIImageView!
     
     @IBAction func cameraButtonAction(_ sender: Any) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .camera
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        pictureImage.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        dismiss(animated: true)
     }
     
 }

@@ -40,7 +40,7 @@
                                 <rect key="frame" x="16" y="753" width="361" height="35"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="カメラを起動">
+                                <buttonConfiguration key="configuration" style="plain" title="Launch Camera">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
